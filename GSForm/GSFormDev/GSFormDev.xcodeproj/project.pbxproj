@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCC743731EBC53C200AA449C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC743721EBC53C200AA449C /* main.m */; };
+		BCC743761EBC53C200AA449C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC743751EBC53C200AA449C /* AppDelegate.m */; };
+		BCC743791EBC53C200AA449C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC743781EBC53C200AA449C /* ViewController.m */; };
+		BCC7437C1EBC53C200AA449C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC7437A1EBC53C200AA449C /* Main.storyboard */; };
+		BCC7437E1EBC53C200AA449C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC7437D1EBC53C200AA449C /* Assets.xcassets */; };
+		BCC743811EBC53C200AA449C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC7437F1EBC53C200AA449C /* LaunchScreen.storyboard */; };
+		BCC7439E1EBC553C00AA449C /* GSForm.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC743971EBC553C00AA449C /* GSForm.m */; };
+		BCC7439F1EBC553C00AA449C /* GSFormVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC743991EBC553C00AA449C /* GSFormVC.m */; };
+		BCC743A01EBC553C00AA449C /* GSRow.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC7439B1EBC553C00AA449C /* GSRow.m */; };
+		BCC743A11EBC553C00AA449C /* GSSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC7439D1EBC553C00AA449C /* GSSection.m */; };
+		BCC97A371EF1A63200FAEE25 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC97A361EF1A63200FAEE25 /* RegisterViewController.m */; };
+		BCC97A3A1EF1A82700FAEE25 /* GSLabelFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC97A391EF1A82700FAEE25 /* GSLabelFieldCell.m */; };
+		BCC97A3D1EF1A9B200FAEE25 /* StepperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC97A3C1EF1A9B200FAEE25 /* StepperCell.m */; };
+		BCC97A401EF1AFA700FAEE25 /* GenderPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC97A3F1EF1AFA700FAEE25 /* GenderPickerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BCC7436E1EBC53C100AA449C /* GSFormDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSFormDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC743721EBC53C200AA449C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCC743741EBC53C200AA449C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCC743751EBC53C200AA449C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCC743771EBC53C200AA449C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BCC743781EBC53C200AA449C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BCC7437B1EBC53C200AA449C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCC7437D1EBC53C200AA449C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCC743801EBC53C200AA449C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCC743821EBC53C200AA449C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC743961EBC553C00AA449C /* GSForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSForm.h; sourceTree = "<group>"; };
+		BCC743971EBC553C00AA449C /* GSForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSForm.m; sourceTree = "<group>"; };
+		BCC743981EBC553C00AA449C /* GSFormVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSFormVC.h; sourceTree = "<group>"; };
+		BCC743991EBC553C00AA449C /* GSFormVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSFormVC.m; sourceTree = "<group>"; };
+		BCC7439A1EBC553C00AA449C /* GSRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSRow.h; sourceTree = "<group>"; };
+		BCC7439B1EBC553C00AA449C /* GSRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSRow.m; sourceTree = "<group>"; };
+		BCC7439C1EBC553C00AA449C /* GSSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSection.h; sourceTree = "<group>"; };
+		BCC7439D1EBC553C00AA449C /* GSSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSection.m; sourceTree = "<group>"; };
+		BCC97A351EF1A63200FAEE25 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		BCC97A361EF1A63200FAEE25 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		BCC97A381EF1A82700FAEE25 /* GSLabelFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSLabelFieldCell.h; sourceTree = "<group>"; };
+		BCC97A391EF1A82700FAEE25 /* GSLabelFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSLabelFieldCell.m; sourceTree = "<group>"; };
+		BCC97A3B1EF1A9B200FAEE25 /* StepperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepperCell.h; sourceTree = "<group>"; };
+		BCC97A3C1EF1A9B200FAEE25 /* StepperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepperCell.m; sourceTree = "<group>"; };
+		BCC97A3E1EF1AFA700FAEE25 /* GenderPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenderPickerViewController.h; sourceTree = "<group>"; };
+		BCC97A3F1EF1AFA700FAEE25 /* GenderPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenderPickerViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCC7436B1EBC53C100AA449C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCC743651EBC53C100AA449C = {
+			isa = PBXGroup;
+			children = (
+				BCC743951EBC553C00AA449C /* GSForm */,
+				BCC743701EBC53C100AA449C /* GSFormDev */,
+				BCC7436F1EBC53C100AA449C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCC7436F1EBC53C100AA449C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCC7436E1EBC53C100AA449C /* GSFormDev.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCC743701EBC53C100AA449C /* GSFormDev */ = {
+			isa = PBXGroup;
+			children = (
+				BCC97A3B1EF1A9B200FAEE25 /* StepperCell.h */,
+				BCC97A3C1EF1A9B200FAEE25 /* StepperCell.m */,
+				BCC97A381EF1A82700FAEE25 /* GSLabelFieldCell.h */,
+				BCC97A391EF1A82700FAEE25 /* GSLabelFieldCell.m */,
+				BCC743741EBC53C200AA449C /* AppDelegate.h */,
+				BCC743751EBC53C200AA449C /* AppDelegate.m */,
+				BCC743771EBC53C200AA449C /* ViewController.h */,
+				BCC743781EBC53C200AA449C /* ViewController.m */,
+				BCC97A351EF1A63200FAEE25 /* RegisterViewController.h */,
+				BCC97A361EF1A63200FAEE25 /* RegisterViewController.m */,
+				BCC97A3E1EF1AFA700FAEE25 /* GenderPickerViewController.h */,
+				BCC97A3F1EF1AFA700FAEE25 /* GenderPickerViewController.m */,
+				BCC7437A1EBC53C200AA449C /* Main.storyboard */,
+				BCC7437D1EBC53C200AA449C /* Assets.xcassets */,
+				BCC7437F1EBC53C200AA449C /* LaunchScreen.storyboard */,
+				BCC743821EBC53C200AA449C /* Info.plist */,
+				BCC743711EBC53C200AA449C /* Supporting Files */,
+			);
+			path = GSFormDev;
+			sourceTree = "<group>";
+		};
+		BCC743711EBC53C200AA449C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCC743721EBC53C200AA449C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCC743951EBC553C00AA449C /* GSForm */ = {
+			isa = PBXGroup;
+			children = (
+				BCC743981EBC553C00AA449C /* GSFormVC.h */,
+				BCC743991EBC553C00AA449C /* GSFormVC.m */,
+				BCC743961EBC553C00AA449C /* GSForm.h */,
+				BCC743971EBC553C00AA449C /* GSForm.m */,
+				BCC7439A1EBC553C00AA449C /* GSRow.h */,
+				BCC7439B1EBC553C00AA449C /* GSRow.m */,
+				BCC7439C1EBC553C00AA449C /* GSSection.h */,
+				BCC7439D1EBC553C00AA449C /* GSSection.m */,
+			);
+			name = GSForm;
+			path = ../GSForm;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCC7436D1EBC53C100AA449C /* GSFormDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC743851EBC53C200AA449C /* Build configuration list for PBXNativeTarget "GSFormDev" */;
+			buildPhases = (
+				BCC7436A1EBC53C100AA449C /* Sources */,
+				BCC7436B1EBC53C100AA449C /* Frameworks */,
+				BCC7436C1EBC53C100AA449C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GSFormDev;
+			productName = GSFormDev;
+			productReference = BCC7436E1EBC53C100AA449C /* GSFormDev.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCC743661EBC53C100AA449C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					BCC7436D1EBC53C100AA449C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BCC743691EBC53C100AA449C /* Build configuration list for PBXProject "GSFormDev" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCC743651EBC53C100AA449C;
+			productRefGroup = BCC7436F1EBC53C100AA449C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCC7436D1EBC53C100AA449C /* GSFormDev */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCC7436C1EBC53C100AA449C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC743811EBC53C200AA449C /* LaunchScreen.storyboard in Resources */,
+				BCC7437E1EBC53C200AA449C /* Assets.xcassets in Resources */,
+				BCC7437C1EBC53C200AA449C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCC7436A1EBC53C100AA449C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC743A01EBC553C00AA449C /* GSRow.m in Sources */,
+				BCC97A401EF1AFA700FAEE25 /* GenderPickerViewController.m in Sources */,
+				BCC743791EBC53C200AA449C /* ViewController.m in Sources */,
+				BCC7439E1EBC553C00AA449C /* GSForm.m in Sources */,
+				BCC97A371EF1A63200FAEE25 /* RegisterViewController.m in Sources */,
+				BCC97A3A1EF1A82700FAEE25 /* GSLabelFieldCell.m in Sources */,
+				BCC97A3D1EF1A9B200FAEE25 /* StepperCell.m in Sources */,
+				BCC743761EBC53C200AA449C /* AppDelegate.m in Sources */,
+				BCC7439F1EBC553C00AA449C /* GSFormVC.m in Sources */,
+				BCC743731EBC53C200AA449C /* main.m in Sources */,
+				BCC743A11EBC553C00AA449C /* GSSection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BCC7437A1EBC53C200AA449C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCC7437B1EBC53C200AA449C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCC7437F1EBC53C200AA449C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCC743801EBC53C200AA449C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCC743831EBC53C200AA449C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCC743841EBC53C200AA449C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCC743861EBC53C200AA449C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GSFormDev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brook.gsform;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BCC743871EBC53C200AA449C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GSFormDev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brook.gsform;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCC743691EBC53C100AA449C /* Build configuration list for PBXProject "GSFormDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC743831EBC53C200AA449C /* Debug */,
+				BCC743841EBC53C200AA449C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC743851EBC53C200AA449C /* Build configuration list for PBXNativeTarget "GSFormDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC743861EBC53C200AA449C /* Debug */,
+				BCC743871EBC53C200AA449C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCC743661EBC53C100AA449C /* Project object */;
+}
