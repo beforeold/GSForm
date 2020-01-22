@@ -8,9 +8,13 @@
 #import <UIKit/UIKit.h>
 #import "GSForm.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface GSFormVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) GSForm *form;
 
 @end
+
+NS_ASSUME_NONNULL_END

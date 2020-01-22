@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "GSRow.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface GSSection : NSObject
 
 @property (nonatomic, strong, readonly) NSMutableArray <GSRow *> *rowArray;
@@ -29,3 +31,6 @@
 - (void)setObject:(GSRow *)obj atIndexedSubscript:(NSUInteger)idx ; // 设值
 
 @end
+
+
+NS_ASSUME_NONNULL_END

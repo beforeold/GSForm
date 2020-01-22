@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 extern NSString *kGSHTTPPropertyKey;
 extern NSString *kGSHTTPValueKey;
 
@@ -37,7 +39,7 @@ static inline NSDictionary *rowOK() {
 @property (nonatomic, assign, readonly) UITableViewCellStyle style;
 @property (nonatomic, copy, readonly) NSString *reuseIdentifier;
 @property (nonatomic, strong) Class cellClass;
-@property (nonatomic, strong) NSString *nibName;
+@property (nonatomic, copy) NSString *nibName;
 @property (nonatomic, assign) CGFloat rowHeight;
 @property (nonatomic, strong) id value;
 @property (nonatomic, copy) NSString *noValueDisplayText;
@@ -49,33 +51,34 @@ static inline NSDictionary *rowOK() {
  * 下面两个二选一
  */
 
-@property (nonatomic, copy) void(^rowConfigBlock)(id cell, id value, NSIndexPath *indexPath); // cellForRow
-@property (nonatomic, copy) GSRowConfigCompletion(^rowConfigBlockWithCompletion)(id cell, id value, NSIndexPath *indexPath); // final row config at cellForRow
+@property (nullable, nonatomic, copy) void(^rowConfigBlock)(id cell, id value, NSIndexPath *indexPath); // cellForRow
+@property (nullable, nonatomic, copy) GSRowConfigCompletion(^rowConfigBlockWithCompletion)(id cell, id value, NSIndexPath *indexPath); // final row config at cellForRow
 
-@property (nonatomic, copy) void(^cellExtraInitBlock)(id cell, id value, NSIndexPath *indexPath); // if(!cell) { extraInitBlock };
+@property (nullable, nonatomic, copy) void(^cellExtraInitBlock)(id cell, id value, NSIndexPath *indexPath); // if(!cell) { extraInitBlock };
 
 /// check isValid
-@property (nonatomic, copy) NSDictionary *(^valueValidateBlock)(id value);
-@property (nonatomic, copy) void(^didSelectBlock)(NSIndexPath *indexPath, id value); // didSelectRow
-@property (nonatomic, copy) void(^didSelectCellBlock)(NSIndexPath *indexPath, id value, id cell); // didSelectRow with Cell
-@property (nonatomic, copy) void(^reformRespRetBlock)(id ret, id value);      // 外部传值处理
-@property (nonatomic, copy) id(^httpParamConfigBlock)(id value); // get param for http request
+@property (nullable, nonatomic, copy) NSDictionary *(^valueValidateBlock)(id value);
+@property (nullable, nonatomic, copy) void(^didSelectBlock)(NSIndexPath *indexPath, id value); // didSelectRow
+@property (nullable, nonatomic, copy) void(^didSelectCellBlock)(NSIndexPath *indexPath, id value, id cell); // didSelectRow with Cell
+@property (nullable, nonatomic, copy) void(^reformRespRetBlock)(id ret, id value);      // 外部传值处理
+@property (nullable, nonatomic, copy) id(^httpParamConfigBlock)(id value); // get param for http request
 
 /// 判断是否【启用】 row 的条件 block，如果返回YES，则 cell 激活，返回NO，则会被禁用
 /// 配合 GSForm 的全局 disable 一起使用
 /// didSelect 变量是 判断该block的调用是否为点击事件的调用
-@property (nonatomic, copy) NSDictionary *(^enableValidateBlock)(id value, BOOL didClick);
+@property (nullable, nonatomic, copy) NSDictionary *(^enableValidateBlock)(id value, BOOL didClick);
 
 /// 判断是否【禁用】 row 的条件block，如果返回YES，则 cell 激活，返回NO，则会被禁用
 /// 当全局的 disable 存在时，此 block 不执行
 /// didSelect 变量是 判断该block的调用是否为点击事件的调用
-@property (nonatomic, copy) NSDictionary *(^disableValidateBlock)(id value, BOOL didClick);
+@property (nullable, nonatomic, copy) NSDictionary *(^disableValidateBlock)(id value, BOOL didClick);
 
 /// 指向所在 section
-@property (nonatomic, weak) GSSection *section;
+@property (nullable, nonatomic, weak) GSSection *section;
 
 @end
 
+NS_ASSUME_NONNULL_END
 
 /*
  *  因为控制器会持有row对象
@@ -104,3 +107,4 @@ static inline NSDictionary *rowOK() {
  };
  
  */
+

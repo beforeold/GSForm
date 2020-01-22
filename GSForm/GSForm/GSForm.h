@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "GSSection.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface GSForm : NSObject
 
 @property (nonatomic, strong, readonly) NSMutableArray <GSSection *> *sectionArray;
@@ -41,3 +43,5 @@
 - (void)setObject:(GSSection *)obj atIndexedSubscript:(NSUInteger)idx ; // 设值
 
 @end
+
+NS_ASSUME_NONNULL_END
