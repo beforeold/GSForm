@@ -18,7 +18,7 @@ extern NSString *kValidateRetKey;
 extern NSString *kValidateMsgKey;
 
 
-typedef void(^GSRowConfigCompletion)();
+typedef void(^GSRowConfigCompletion)(void);
 
 ///
 static inline NSDictionary *rowError(NSString *msg) {
