@@ -1,20 +1,21 @@
 //
-//  GSForm.m
+//  GSFormBuilder.m
 //  GS3PL
 //
 //  Created by Brook on 2017/4/28.
 //  Copyright © 2017年 Brook. All rights reserved.
 //
 
-#import "GSForm.h"
+#import "GSFormBuilder.h"
+#import "GSSection.h"
 
-@interface GSForm ()
+@interface GSFormBuilder ()
 
 @property (nonatomic, strong, readwrite) NSMutableArray <GSSection *> *sectionArray;
 
 @end
 
-@implementation GSForm
+@implementation GSFormBuilder
 - (void)addSection:(GSSection *)section {
     [self.sectionArray addObject:section];
 }
@@ -134,7 +135,7 @@
 
 @end
 
-@implementation GSForm (NSSubscript)
+@implementation GSFormBuilder (NSSubscript)
 // 数组样式
 - (GSSection *)objectAtIndexedSubscript:(NSUInteger)idx {
     if (self.sectionArray.count > idx) return self.sectionArray[idx];

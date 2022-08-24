@@ -6,8 +6,8 @@
 //  Copyright © 2017年 Brook. All rights reserved.
 //
 
-#import "GSFormVC.h"
+#import "GSForm.h"
 
-@interface RegisterViewController : GSFormVC
+@interface RegisterViewController : GSFormViewController
 
 @end

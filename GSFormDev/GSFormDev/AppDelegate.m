@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 
 //#define GSFormBaseVC GSBaseVCViewController
-#import "GSFormVC.h"
+#import "GSFormViewController.h"
 
 #define XXX GSBaseVCViewController
 
@@ -23,7 +23,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    GSFormVC *formVC = [[GSFormVC alloc] init];
+    GSFormViewController *formVC = [[GSFormViewController alloc] init];
     
     NSLog(@"formvc %@", formVC);
     

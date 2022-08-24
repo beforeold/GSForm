@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name         = "GSForm"
 
-  s.version      = "2.3"
+  s.version      = "3.0"
   s.summary      = "this is a GSForm."
 
   s.description  = <<-DESC

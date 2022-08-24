@@ -13,8 +13,8 @@
 		BCC7437C1EBC53C200AA449C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC7437A1EBC53C200AA449C /* Main.storyboard */; };
 		BCC7437E1EBC53C200AA449C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC7437D1EBC53C200AA449C /* Assets.xcassets */; };
 		BCC743811EBC53C200AA449C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC7437F1EBC53C200AA449C /* LaunchScreen.storyboard */; };
-		BCC7439E1EBC553C00AA449C /* GSForm.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC743971EBC553C00AA449C /* GSForm.m */; };
-		BCC7439F1EBC553C00AA449C /* GSFormVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC743991EBC553C00AA449C /* GSFormVC.m */; };
+		BCC7439E1EBC553C00AA449C /* GSFormBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC743971EBC553C00AA449C /* GSFormBuilder.m */; };
+		BCC7439F1EBC553C00AA449C /* GSFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC743991EBC553C00AA449C /* GSFormViewController.m */; };
 		BCC743A01EBC553C00AA449C /* GSRow.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC7439B1EBC553C00AA449C /* GSRow.m */; };
 		BCC743A11EBC553C00AA449C /* GSSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC7439D1EBC553C00AA449C /* GSSection.m */; };
 		BCC97A371EF1A63200FAEE25 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC97A361EF1A63200FAEE25 /* RegisterViewController.m */; };
@@ -24,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94C2845A28B6926000DA9C4E /* GSForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSForm.h; sourceTree = "<group>"; };
 		BCC7436E1EBC53C100AA449C /* GSFormDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSFormDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC743721EBC53C200AA449C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BCC743741EBC53C200AA449C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -34,10 +35,10 @@
 		BCC7437D1EBC53C200AA449C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCC743801EBC53C200AA449C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCC743821EBC53C200AA449C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BCC743961EBC553C00AA449C /* GSForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSForm.h; sourceTree = "<group>"; };
-		BCC743971EBC553C00AA449C /* GSForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSForm.m; sourceTree = "<group>"; };
-		BCC743981EBC553C00AA449C /* GSFormVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSFormVC.h; sourceTree = "<group>"; };
-		BCC743991EBC553C00AA449C /* GSFormVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSFormVC.m; sourceTree = "<group>"; };
+		BCC743961EBC553C00AA449C /* GSFormBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSFormBuilder.h; sourceTree = "<group>"; };
+		BCC743971EBC553C00AA449C /* GSFormBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSFormBuilder.m; sourceTree = "<group>"; };
+		BCC743981EBC553C00AA449C /* GSFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSFormViewController.h; sourceTree = "<group>"; };
+		BCC743991EBC553C00AA449C /* GSFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSFormViewController.m; sourceTree = "<group>"; };
 		BCC7439A1EBC553C00AA449C /* GSRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSRow.h; sourceTree = "<group>"; };
 		BCC7439B1EBC553C00AA449C /* GSRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSRow.m; sourceTree = "<group>"; };
 		BCC7439C1EBC553C00AA449C /* GSSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSection.h; sourceTree = "<group>"; };
@@ -63,6 +64,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94C2845B28B692A900DA9C4E /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				BCC7439A1EBC553C00AA449C /* GSRow.h */,
+				BCC7439B1EBC553C00AA449C /* GSRow.m */,
+				BCC7439C1EBC553C00AA449C /* GSSection.h */,
+				BCC7439D1EBC553C00AA449C /* GSSection.m */,
+				BCC743961EBC553C00AA449C /* GSFormBuilder.h */,
+				BCC743971EBC553C00AA449C /* GSFormBuilder.m */,
+				BCC743981EBC553C00AA449C /* GSFormViewController.h */,
+				BCC743991EBC553C00AA449C /* GSFormViewController.m */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
 		BCC743651EBC53C100AA449C = {
 			isa = PBXGroup;
 			children = (
@@ -115,14 +131,8 @@
 		BCC743951EBC553C00AA449C /* GSForm */ = {
 			isa = PBXGroup;
 			children = (
-				BCC743981EBC553C00AA449C /* GSFormVC.h */,
-				BCC743991EBC553C00AA449C /* GSFormVC.m */,
-				BCC743961EBC553C00AA449C /* GSForm.h */,
-				BCC743971EBC553C00AA449C /* GSForm.m */,
-				BCC7439A1EBC553C00AA449C /* GSRow.h */,
-				BCC7439B1EBC553C00AA449C /* GSRow.m */,
-				BCC7439C1EBC553C00AA449C /* GSSection.h */,
-				BCC7439D1EBC553C00AA449C /* GSSection.m */,
+				94C2845A28B6926000DA9C4E /* GSForm.h */,
+				94C2845B28B692A900DA9C4E /* sources */,
 			);
 			name = GSForm;
 			path = ../GSForm;
@@ -154,6 +164,7 @@
 		BCC743661EBC53C100AA449C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = GS;
 				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
@@ -202,12 +213,12 @@
 				BCC743A01EBC553C00AA449C /* GSRow.m in Sources */,
 				BCC97A401EF1AFA700FAEE25 /* GenderPickerViewController.m in Sources */,
 				BCC743791EBC53C200AA449C /* ViewController.m in Sources */,
-				BCC7439E1EBC553C00AA449C /* GSForm.m in Sources */,
+				BCC7439E1EBC553C00AA449C /* GSFormBuilder.m in Sources */,
 				BCC97A371EF1A63200FAEE25 /* RegisterViewController.m in Sources */,
 				BCC97A3A1EF1A82700FAEE25 /* GSLabelFieldCell.m in Sources */,
 				BCC97A3D1EF1A9B200FAEE25 /* StepperCell.m in Sources */,
 				BCC743761EBC53C200AA449C /* AppDelegate.m in Sources */,
-				BCC7439F1EBC553C00AA449C /* GSFormVC.m in Sources */,
+				BCC7439F1EBC553C00AA449C /* GSFormViewController.m in Sources */,
 				BCC743731EBC53C200AA449C /* main.m in Sources */,
 				BCC743A11EBC553C00AA449C /* GSSection.m in Sources */,
 			);

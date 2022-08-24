@@ -1,12 +1,14 @@
 //
-//  GSFormVC.m
+//  GSFormViewController.m
 //
 //  Created by Brook on 2017/4/24.
 //  Copyright © 2017年 Brook. All rights reserved.
 //
 
 // controllers
-#import "GSFormVC.h"
+#import "GSFormViewController.h"
+#import "GSFormBuilder.h"
+#import "GSSection.h"
 
 // views
 
@@ -25,11 +27,11 @@
 
 @end
 
-@interface GSFormVC ()
+@interface GSFormViewController ()
 
 @end
 
-@implementation GSFormVC
+@implementation GSFormViewController
 
 #pragma mark - lifeCycle
 - (void)viewDidLoad
@@ -201,9 +203,9 @@
     return _tableView;
 }
 
-- (GSForm *)form {
+- (GSFormBuilder *)form {
     if (!_form) {
-        _form = [[GSForm alloc] init];
+        _form = [[GSFormBuilder alloc] init];
     }
     
     return _form;
