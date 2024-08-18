@@ -1,11 +1,3 @@
-//
-//  ViewController.m
-//  GSFormDev
-//
-//  Created by Brook on 2017/5/5.
-//  Copyright © 2017年 Brook. All rights reserved.
-//
-
 #import "ViewController.h"
 
 #import "RegisterViewController.h"

@@ -1,11 +1,3 @@
-//
-//  GSLabelFieldCell.m
-//  GS3PL
-//
-//  Created by Brook on 2017/4/22.
-//  Copyright © 2017年 Brook. All rights reserved.
-//
-
 #import "GSLabelFieldCell.h"
 
 static const CGFloat kFieldWidth = 150.f;
