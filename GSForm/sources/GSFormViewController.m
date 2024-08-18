@@ -1,10 +1,3 @@
-//
-//  GSFormViewController.m
-//
-//  Created by Brook on 2017/4/24.
-//  Copyright © 2017年 Brook. All rights reserved.
-//
-
 // controllers
 #import "GSFormViewController.h"
 #import "GSFormBuilder.h"

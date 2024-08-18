@@ -1,11 +1,3 @@
-//
-//  GSFormBuilder.m
-//  GS3PL
-//
-//  Created by Brook on 2017/4/28.
-//  Copyright © 2017年 Brook. All rights reserved.
-//
-
 #import "GSFormBuilder.h"
 #import "GSSection.h"
 

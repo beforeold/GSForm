@@ -1,9 +1,3 @@
-//
-//  GSFormBuilder.h
-//  GS3PL
-//
-//  Created by Brook on 2017/4/28.
-//  Copyright © 2017年 Brook. All rights reserved.
 //  整个 tableView 的数据源对象
 
 #import <UIKit/UIKit.h>

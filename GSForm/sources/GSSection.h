@@ -1,9 +1,3 @@
-//
-//  GSSectionItem.h
-//  GS3PL
-//
-//  Created by Brook on 2017/4/22.
-//  Copyright © 2017年 Brook. All rights reserved.
 //  描述 section 的数据源
 
 #import <Foundation/Foundation.h>

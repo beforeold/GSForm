@@ -1,11 +1,3 @@
-//
-//  GSSectionItem.m
-//  GS3PL
-//
-//  Created by Brook on 2017/4/22.
-//  Copyright © 2017年 Brook. All rights reserved.
-//
-
 #import "GSSection.h"
 
 @interface GSSection ()
