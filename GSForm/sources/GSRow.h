@@ -26,7 +26,7 @@ static inline NSDictionary *rowError(NSString *msg) {
              kValidateRetKey:@NO};
 }
 
-static inline NSDictionary *rowOK() {
+static inline NSDictionary *rowOK(void) {
     return @{kValidateRetKey:@YES};
 }
 
